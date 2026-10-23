@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8b0000" />
+  <title>Privacy Policy - HimalBrowser</title>
+  <style>
+    :root {
+      --primary: #8b0000;
+      --primary-light: #b22222;
+      --accent: #00897b;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #212529;
+      --text-muted: #6c757d;
+      --border: #e9ecef;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #b22222;
+        --primary-light: #d32f2f;
+        --accent: #03dac6;
+        --bg: #121212;
+        --card-bg: #1e1e1e;
+        --text: #f8f9fa;
+        --text-muted: #adb5bd;
+        --border: #2c2c2c;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px 16px 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lang-btn {
+      padding: 6px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .card h2 {
+      font-size: 18px;
+      color: var(--primary);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card p {
+      font-size: 14.5px;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    .highlight-badge {
+      display: inline-block;
+      background: rgba(139, 0, 0, 0.1);
+      color: var(--primary);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand-logo">
+        <span>🏔️</span> HimalBrowser
+      </div>
+      <h1 id="pageTitle" style="font-size: 22px; font-weight: 700;">Privacy Policy / गोपनीयता नीति</h1>
+      <div class="last-updated" id="lastUpdated">Effective Date: October 2026</div>
+      
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btnEn" onclick="switchLanguage('en')">English</button>
+        <button class="lang-btn" id="btnNe" onclick="switchLanguage('ne')">नेपाली (Nepali)</button>
+      </div>
+    </header>
+
+    <!-- English Content -->
+    <div id="contentEn">
+      <div class="card">
+        <span class="highlight-badge">🛡️ Commitment</span>
+        <h2>1. Zero-Tracking Philosophy</h2>
+        <p>HimalBrowser is dedicated to protecting user privacy. We do not track, collect, profile, or sell your personal browsing history, search terms, or identity. We do not maintain any central servers that log user activities.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Local Device Storage</h2>
+        <p>Your browsing data stays exclusively on your hardware:</p>
+        <ul>
+          <li><strong>Bookmarks:</strong> Stored locally in encrypted on-device SQLite database.</li>
+          <li><strong>Browsing History:</strong> Saved only on your local device. You can clear all history with a single tap at any time.</li>
+          <li><strong>Downloads:</strong> File downloads are saved to your device's standard Downloads folder.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>3. Chromium Engine & Web Rendering</h2>
+        <p>HimalBrowser utilizes the Android System WebView powered by Chromium (Blink & V8 engine) to ensure industry-standard security and web compatibility.</p>
+        <p>Websites you visit may deposit cookies and cache items on your phone. These remain isolated in the sandboxed application storage and can be deleted by clearing application cache.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Built-in Ad Blocker</h2>
+        <p>Our integrated ad blocker intercepts network requests on your local device before they connect to known intrusive ad servers, popup scripts, and telemetry networks. No browsing analytics are dispatched to third-party ad monitors.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Device Permissions & Usage</h2>
+        <ul>
+          <li><strong>INTERNET:</strong> Mandatory to communicate with the web and fetch live news RSS feeds.</li>
+          <li><strong>ACCESS_NETWORK_STATE:</strong> Used solely to show the offline indicator when internet connection drops.</li>
+          <li><strong>RECORD_AUDIO (Optional):</strong> Invoked only when you click the voice search microphone icon to convert spoken words into search queries via Android's built-in speech recognition. Voice recordings are never stored or saved by HimalBrowser.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>6. Third-Party Websites</h2>
+        <p>When you click on links, speed dial shortcuts, or live news headlines, you navigate to third-party domains (such as Google, YouTube, BBC, OnlineKhabar, Ratopati, etc.). Each independent website operates under its own privacy policy.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Contact Information</h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please reach out directly:</p>
+        <p><strong>Email Support:</strong> <a href="mailto:himalbrowser@gmail.com" style="color:var(--primary); font-weight:bold;">himalbrowser@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- Nepali Content -->
+    <div id="contentNe" style="display: none;">
+      <div class="card">
+        <span class="highlight-badge">🛡️ हाम्रो प्रतिबद्धता</span>
+        <h2>१. शून्य-ट्र्याकिङ प्रतिबद्धता (Zero-Tracking)</h2>
+        <p>HimalBrowser प्रयोगकर्ताको गोपनीयताको पूर्ण सम्मान गर्दछ। हामी तपाईंको व्यक्तिगत खोजी, ब्राउजिङ इतिहास, वा प्रयोगकर्ता जानकारी कुनै पनि बाह्य सर्भरमा सङ्कलन, भण्डारण वा बिक्री गर्दैनौं।</p>
+      </div>
+
+      <div class="card">
+        <h2>२. स्थानीय डेटा भण्डारण (Local Device Storage)</h2>
+        <p>तपाईंको ब्राउजिङ डेटा पूर्ण रूपमा तपाईंको आफ्नै फोनमा मात्र सुरक्षित रहन्छ:</p>
+        <ul>
+          <li><strong>बुकमार्कहरू:</strong> तपाईंको यन्त्रको स्थानीय सुरक्षित डेटाबेसमा मात्र राखिन्छ।</li>
+          <li><strong>इतिहास (History):</strong> तपाईंको डिभाइसमै रहन्छ र तपाईं जुनसुकै बेला एक क्लिकमा सबै इतिहास मेटाउन सक्नुहुन्छ।</li>
+          <li><strong>डाउनलोडहरू:</strong> डाउनलोड गरिएका फाइलहरू फोनको Downloads फोल्डरमा सुरक्षित हुन्छन्।</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>३. क्रोमियम इन्जिन र कुकीज (Chromium Engine & Cookies)</h2>
+        <p>यो एपले वेब पृष्ठहरू सुरक्षित र तीव्र गतिमा चलाउन Android System WebView (Chromium Blink & V8) इन्जिन प्रयोग गर्दछ।</p>
+        <p>तपाईंले खोल्नुभएका वेबसाइटहरूले आफ्नै नीति अनुसार कुकीज वा क्यास फाइलहरू तपाईंको डिभाइसमा सुरक्षित गर्न सक्छन्। यी कुकीजहरू एपको सान्डबक्स भित्र मात्र सीमित रहन्छन्।</p>
+      </div>
+
+      <div class="card">
+        <h2>४. विज्ञापन अवरोधक (Built-in Ad Blocker)</h2>
+        <p>हाम्रो विज्ञापन अवरोधकले तपाईंको उपकरणमै घुसपैठ गर्ने विज्ञापन र ट्र्याकरहरूलाई नेटवर्क अनुरोधको स्तरमै रोक्छ। यसको लागि कुनै बाहिरी सर्भरमा डेटा पठाइँदैन।</p>
+      </div>
+
+      <div class="card">
+        <h2>५. अनुमतिहरू (Permissions Usage)</h2>
+        <ul>
+          <li><strong>इन्टरनेट (INTERNET):</strong> वेबसाइटहरू खोल्न र प्रत्यक्ष समाचार (Live News) देखाउन अनिवार्य छ।</li>
+          <li><strong>नेटवर्क स्थिति (ACCESS_NETWORK_STATE):</strong> इन्टरनेट नभएको बेला जानकारी दिन प्रयोग हुन्छ।</li>
+          <li><strong>माइक्रोफोन (RECORD_AUDIO - ऐच्छिक):</strong> तपाईंले भ्वाइस सर्च माइक बटन थिच्दा मात्र बोलीलाई खोजी शब्दमा बदल्न प्रयोग गरिन्छ। आवाज कतै पनि सुरक्षित वा अपलोड गरिँदैन।</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>६. बाह्य वेबसाइटहरू (Third-Party Sites)</h2>
+        <p>जब तपाईं समाचार वा वेबसाइट लिङ्क खोल्नुहुन्छ, तपाईं बाह्य वेबसाइटहरूमा पुग्नुहुन्छ। ती वेबसाइटहरूको आफ्नै गोपनीयता नीति लागू हुन्छ।</p>
+      </div>
+
+      <div class="card">
+        <h2>७. सम्पर्क (Contact Support)</h2>
+        <p>यस गोपनीयता नीतिको बारेमा कुनै पनि जिज्ञासा वा सुझाव भए हामीलाई सिधै सम्पर्क गर्नुहोस्:</p>
+        <p><strong>इमेल सहयोग:</strong> <a href="mailto:himalbrowser@gmail.com" style="color:var(--primary); font-weight:bold;">himalbrowser@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 HimalBrowser. All rights reserved.</p>
+      <p style="margin-top: 6px;"><a href="mailto:himalbrowser@gmail.com">himalbrowser@gmail.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      const enDiv = document.getElementById('contentEn');
+      const neDiv = document.getElementById('contentNe');
+      const btnEn = document.getElementById('btnEn');
+      const btnNe = document.getElementById('btnNe');
+      const pageTitle = document.getElementById('pageTitle');
+      const lastUpdated = document.getElementById('lastUpdated');
+
+      if (lang === 'ne') {
+        enDiv.style.display = 'none';
+        neDiv.style.display = 'block';
+        btnEn.classList.remove('active');
+        btnNe.classList.add('active');
+        pageTitle.textContent = 'गोपनीयता नीति (Privacy Policy)';
+        lastUpdated.textContent = 'लागू मिति: अक्टोबर २०२६';
+      } else {
+        enDiv.style.display = 'block';
+        neDiv.style.display = 'none';
+        btnEn.classList.add('active');
+        btnNe.classList.remove('active');
+        pageTitle.textContent = 'Privacy Policy / गोपनीयता नीति';
+        lastUpdated.textContent = 'Effective Date: October 2026';
+      }
+    }
+  </script>
+</body>
+</html>
